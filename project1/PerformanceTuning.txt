@@ -1,0 +1,7 @@
+The naive implementation initially had separate single select statements that were sent to the movie database. This was not efficient, as the time it took to query/insert the database took more 15 minutes.
+
+Because of this, we optimized XML parsing in 2 ways. For one, we created a Movie and Star object that held various information for a single movie and a single star. Then, we utilized many data structures when parsing the 3 XML files such as HashMap, HashSet, and ArrayList to keep track of the many Movie and Star objects (as well as the different information such as the IDs of movies and genres). 
+
+In addition, we used these 3 data structures to store all the information of every movie, star, genre, and genre_in_movie record that already exists in moviedb. This was useful for checking duplicate records. Although memory was a trade off, it helped the XML parsing cut down alot in time. 
+
+The second way we optimized parsing was the use of batch insert. Using batch insert rather than single insert statements reduces the number of network trips to the movie databases, and therefore is faster. With these 2 ways, we optimized the time it takes to parse and insert into the database from 15 minutes to 30 seconds to a minute.

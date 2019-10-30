@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+    	integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">      
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Six+Caps" />
+    <link href="movielist-theme.css" type="text/css" rel="stylesheet">
+
+	<style>
+		body {
+			margin: 0; 
+			padding: 0; 
+			background-image: url("//i.imgur.com/QRxxXSL.png");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-attachment: fixed;
+			background-position: 0 45px; 
+		}
+	
+	
+	</style>
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+<!-- HTML FOR NAVIGATION BAR  -->
+	<nav class="navbar fixed-top bg-faded">
+	  <div class="container">
+	    <ul class="nav navbar-nav pull-sm-left">
+	        <li class="nav-item">
+				<a class="navbar-brand" href="homepage.html">
+					<img src="https://i.imgur.com/bSId3Dl.png" width="70" height="70" alt="logo"> 
+		  		</a>
+		  	</li>
+	    </ul>
+	    <ul class="nav navbar-nav pull-sm-right">
+    		<li class="nav-item">
+      			<a class="nav-link" href="index.html">Search</a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link" href="browse-menu.html">Browse</a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link" href="shopping-cart.html">Checkout</a>
+    		</li>
+	    </ul>
+	  </div>
+	</nav>
+	
+	<div class="header">
+		<h1 id="mainHeader">Employee Dashboard</h1>
+	</div>
+	<div id="login_error_message" class="login_error_message"></div>
+	<h2 id=Searched></h2>
+<!--  Add Single Movie -->	
+	<h2>Add Movie</h2>
+	<form action="dashboard.html" id="add" class="add" method="get">
+			<input type="text" placeholder="Title" name="movieTitle">
+			<input type="text" placeholder="Year" name="movieYear">
+			<input type="text" placeholder="Director" name="movieDirector">
+			<input type="text" placeholder="Single Star Name" name="starName">
+			<input type="text" placeholder="Star's Birthyear" name="starDOB">
+			<input type="text" placeholder="Single Genre" name="genreName">
+			<input type="hidden" name="addMovie" value="true">
+			<input type="hidden" name="addStar" value="false">
+			<input type="submit" value="Add Movie"><br>
+	</form>
+	
+<!--  Add Single Star -->	
+	<br><h2>Add Star</h2><br>
+	<form action="dashboard.html" id="add" class="add" method="get">
+			<input type="hidden" name="movieTitle" value="">
+			<input type="hidden" name="movieYear" value="">
+			<input type="hidden" name="movieDirector" value="">
+			<input type="text" placeholder="Star Name" name="starName">
+			<input type="text" placeholder="Birth Year" name="starDOB">
+			<input type="hidden" name="genreName" value="">
+			<input type="hidden" name="addMovie" value="false">
+			<input type="hidden" name="addStar" value="true">
+			<input type="submit" value="Add Star">
+			
+	</form>
+	
+<table id=movie_table class="table table-striped">
+<!--  Database Metadata -->
+	<h2>Database's Metadata</h2>
+    <thead>
+    	<tr>
+        	<th>Table</th>
+        	<th>Column</th>
+        	<th>Column's Type</th>
+    	</tr>
+    </thead>
+    <tbody id=movie_table_body></tbody>
+	</table>
+
+<!-- SCRIPTS -->
+	<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script type='text/javascript' src="dashboard.js"></script>
+	
+</body>
+</html>

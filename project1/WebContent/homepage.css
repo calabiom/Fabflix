@@ -1,0 +1,56 @@
+body {
+	margin: 0; 
+	padding: 0px; 
+    background-image: url("https://i.imgur.com/QRxxXSL.png");
+/*    background-color: #E50914; */
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	background-position: 0 45px; 
+}
+
+
+
+.navbar{ 
+    background: black;	/*#221F1F;*/
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-nav {
+	flex-direction: row;
+}
+    
+.nav-link {
+	padding-right: 1.5rem !important;
+	padding-left: .5rem !important;
+}
+
+.header{
+	margin-top:350px;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 75px;
+	color: white;
+	text-align: center;
+}
+
+
+a{
+	color: white;
+}
+a:hover{
+	color: #FFC723;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+    	integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">      
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Six+Caps" />
+    <link href="movielist-theme.css" type="text/css" rel="stylesheet">
+    <title>Fablix Search</title>
+</head>
+
+<body>
+
+<!-- HTML FOR NAVIGATION BAR  -->
+	<nav class="navbar fixed-top bg-faded">
+	  <div class="container">
+	    <ul class="nav navbar-nav pull-sm-left">
+	        <li class="nav-item">
+				<a class="navbar-brand" href="homepage.html">
+					<img src="https://i.imgur.com/bSId3Dl.png" width="70" height="70" alt="logo"> 
+		  		</a>
+		  	</li>
+	    </ul>
+	    <ul class="nav navbar-nav pull-sm-right">
+    		<li class="nav-item">
+      			<a class="nav-link" href="index.html">Search</a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link" href="browse-menu.html">Browse</a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link" href="shopping-cart.html">Checkout</a>
+    		</li>
+<!--     		<li class="nav-item">
+      			<a class="nav-link" href="checkout-info.html">Checkout</a>
+    		</li> -->
+	    </ul>
+	  </div>
+	</nav>
+	
+	<div class="header">
+		<h1 id="mainHeader"></h1>
+	</div>
+	
+<!-- HTML FOR SEARCH BARS -->
+	<form action="index.html" id="searchbars" class="search" method="get">
+			<input type="text" placeholder="Search by Movie Title" name="title">
+			<input type="text" placeholder="Search by Movie Year" name="year">
+			<input type="text" placeholder="Search by Movie Director" name="director">
+			<input type="text" placeholder="Search by Movie Star(s)" name="star">
+			<input type="hidden" name="listing" value="10">
+			<input type="hidden" name="sort" value="2">
+			<input type="hidden" name="page" value="1">
+			<input type="submit" value="Search">
+	</form>
+	<h2 id=Searched></h2>
+	
+<!-- HTML FOR SORTING -->
+<div class="row">
+	    <div class="col-lg-4 mx-auto">
+			<div class="input-group">
+			  <div class="input-group-append">
+			    <button class="btn-outline-secondary" type="button" onclick="refreshBrowsing('sorting')">Sort by</button>
+			  </div>
+			  <select class="custom-select" id="sorting-options">
+			    <option value="0">Movie title (A to Z) </option>
+			    <option value="1">Movie title (Z to A)</option>
+			    <option value="2">Movie rating (Highest)</option>
+			    <option value="3">Movie rating (Lowest) </option>
+			  </select>
+			</div>
+		</div>
+		
+<!-- HTML FOR DISPLAY -->
+		
+		<div class="col-lg-4 mx-auto">
+			<div class="input-group">
+			  <div class="input-group-append">
+			    <button class="btn-outline-secondary" type="button" onclick="refreshBrowsing('listing')">Display</button>
+			  </div>
+			  <select class="custom-select" id="listing-options">
+			    <option value="10">10 movies per page</option>
+			    <option value="25">25 movies per page</option>
+			    <option value="50">50 movies per page</option>
+			    <option value="100">100 movies per page</option>
+			  </select>
+			</div>	
+		</div>
+	</div>
+		  
+<!--  HTML FOR RESULTS -->
+	<table id=movie_table class="table table-striped">
+    <thead>
+    	<tr>
+        	<th>Title</th>
+        	<th>Year</th>
+        	<th>Director</th>
+        	<th>Genre(s)</th>
+        	<th>Star(s)</th>
+        	<th>Rating</th>
+        	<th>Add to Cart?</th>
+    	</tr>
+    </thead>
+    <tbody id=movie_table_body></tbody>
+	</table>
+	
+<!-- HTML FOR PREV/NEXT -->
+	<div class="container">               
+	  <ul class="pager" id="btn-display"></ul>
+	</div>
+	
+<!-- SCRIPTS -->
+	<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script type='text/javascript' src="index.js"></script>
+</body>
+</html>

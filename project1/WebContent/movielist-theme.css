@@ -1,0 +1,246 @@
+.navbar{ 
+    background: black; /*#221F1F;*/
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-nav {
+	flex-direction: row;
+}
+    
+.nav-link {
+	padding-right: 1.5rem !important;
+	padding-left: .5rem !important;
+}
+
+body {
+	margin: 0; 
+	padding: 0; 
+	background-image: url("//i.imgur.com/QRxxXSL.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	background-position: 0 45px; 
+}
+        		
+/* .header h1{
+	margin-left: 15%;
+	display: inline;
+	text-align: center;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 100px; 
+	font-weight: bold;
+	letter-spacing: -1px;
+} */
+
+
+        	  	
+h2 {
+	text-align: center;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	letter-spacing: 1px;
+	line-height: 50px;
+	margin: 0;
+	font-weight: lighter;
+}
+  
+form.search{
+	padding-bottom: 50px;
+	margin-top: 100px;
+	margin-left: 15%
+}
+   
+form.search input[type=text] {
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid grey;
+  float: left;
+  width: 18%;
+  background: white;
+  color: black;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+}
+
+form.search input[type=submit] {
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid grey;
+  float: left;
+  width: 8%;
+  background: #FFC723;
+  color: black;
+  font-family: Raleway, sans-serif;
+  font-weight: 900;
+}
+
+   	  	
+table {
+	border-collapse: collapse;
+	border: 1px solid black;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+    /*    	  	
+tr:hover {background-color: #ffdb58;}
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:hover:nth-child(even) {background-color: #ffdb58;}
+ */       	  	
+thead th {
+	padding-top: 10px;
+	font-size: 22px;
+	font-family: 'Raleway', sans-serif;
+	padding: 20px;
+	background-color: black;
+	color: white;
+	text-align: left;
+}
+       
+tbody th {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	padding: 20px;
+	text-align: left;
+	color:white;
+	background-color:rgba(0,0,0,0.6);
+}
+a {
+	color: white;
+}
+.custom-select{
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	color: white;
+	font-size: 13px;
+	background-color: rgba(0, 0, 0, 0.5);;
+}
+
+.btn-outline-secondary{
+	font-family: 'Raleway', sans-serif;
+	color: black;
+	font-size: 13px;
+	background-color: #FFC723;
+	font-weight: 900;
+	width: 120px;
+}
+
+.pager{
+	font-family: 'Raleway', sans-serif;
+	color: black;
+	font-size: 13px;
+	background-color: #FFC723;
+	font-weight: 900;
+	width: 120px;
+	margin: 0 auto;
+}
+
+.browseId{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	color: white;
+	font-size: 200px;
+		
+}
+
+.genre_display{
+	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+	color: white;
+	background-color: black;
+}
+
+.header{
+	margin-top: 100px;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 35px;
+	color: white;
+	text-align: center;
+}
+
+a:hover{
+	color: #FFC723;
+}
+
+#genreId{
+	margin-top: 100px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 35px;
+	color: white;
+	text-align: center;
+}
+
+#genre_display{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+#titleId{
+	margin-top: 20px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 35px;
+	color: white;
+	text-align: center;
+}
+
+#title_display{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	color: white;
+}
+#login_error_message{
+	font-family: Raleway, sans-serif;
+    color: #FFC723;
+    text-align: center;
+    font-weight: lighter;
+}
+.login_error_message{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	color: #FFC723;
+	text-align: center;
+	font-weight: lighter;
+}
+
+#Searched{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	font-weight: lighter;
+}
+form.add{
+	padding-bottom: 50px;
+	margin-left: 15%
+}
+form.add input[type=text] {
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid grey;
+  float: left;
+  width: 13%;
+  background: white;
+  color: black;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+}
+
+form.add input[type=submit] {
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid grey;
+  float: left;
+  width: 8%;
+  background: #FFC723;
+  color: black;
+  font-family: Raleway, sans-serif;
+  font-weight: 900;
+}

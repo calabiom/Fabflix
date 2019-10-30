@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="movielist-theme.css" type="text/css" rel="stylesheet">
+    
+    <title>Fablix Star Info</title>
+</head>
+<body>
+	<!-- 	<h1><a class="homeButton" href="index.html" title="Click for Top 20 Movie List">Fablix</a></h1> -->
+	<!-- 	<h2 id="star_header1"></h2> -->
+	<!-- 	<!-- // <h3 id="star_info"></h3>--> 
+	
+<!-- 	<div class="header">
+		<a href="index.html" title="Click for Top 20 Movie List"><img src="//i.imgur.com/bSId3Dl.png" alt="logo"></a>
+		<h2 id="star_header1"></h2>
+	</div> -->
+	
+	<nav class="navbar fixed-top bg-faded">
+	  <div class="container">
+	    <ul class="nav navbar-nav pull-sm-left">
+	        <li class="nav-item">
+				<a class="navbar-brand" href="homepage.html">
+					<img src="https://i.imgur.com/bSId3Dl.png" width="70" height="70" alt="logo"> 
+		  		</a>
+		  	</li>
+	    </ul>
+	    <ul class="nav navbar-nav pull-sm-right">
+    		<li class="nav-item">
+      			<a class="nav-link" href="index.html">Search</a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link" href="browse-menu.html">Browse</a>
+    		</li>
+    		<li class="nav-item">
+      			<a class="nav-link" href="shopping-cart.html">Checkout</a>
+    		</li>
+<!--     		<li class="nav-item">
+      			<a class="nav-link" href="checkout-info.html">Checkout</a>
+    		</li> -->
+	    </ul>
+	  </div>
+	</nav>
+	  
+
+	<h1 id="header" class="header">Star Information</h1> 
+
+
+<table id=star_table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Year of Birth</th>
+        <th>Movies Featured In</th>
+        
+    </tr>
+    </thead>
+
+    <!-- Table body is left empty here, will be populated with the data retrieved with single-star.js -->
+    <!-- single-star.js will find this html element by it's id "movie_table_body" -->
+    <tbody id=star_table_body></tbody>
+</table>
+<!-- Load jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Load our own JS file -->
+<!-- The path is relative to single-star.html, since these two files are in the same directory -->
+<!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
+     otherwise the url is relative to the root path-->
+<script src="single-star.js"></script>
+</body>
+
+
+</html>

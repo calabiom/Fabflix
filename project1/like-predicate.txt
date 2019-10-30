@@ -1,0 +1,13 @@
+We used the LIKE predicate in the query inside MovieServlet which is used for searching. 
+Here the query is constructed depending if the parameter contains symbols like "%" or "_". 
+If it does then it just searches its respected fields (Title, Director, Star) to see if it matches any of them in the database. 
+If the query has no "%" or "_" symbol then it just searches for anything that has the query in it (%query%). 
+
+It supports the following:
+ 
+'A_Z': All strings that start with 'A', then follow by a single character, and end with 'Z'. E.g. 'ABZ' and 'A2Z'. However, 'AKKZ' does not satisfy the condition.
+'ABC%': All strings that start with 'ABC'. E.g. 'ABCD' and 'ABCABC'.
+'%XYZ': All strings that end with 'XYZ'. E.g. 'WXYZ' and 'ZZXYZ'.
+'%AN%': All strings that contain the pattern 'AN' anywhere. E.g. 'LOS ANGELES' and 'SAN FRANCISCO'
+
+AND supports an query with any amount of "_" symbols. 

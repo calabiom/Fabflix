@@ -1,0 +1,55 @@
+@charset "ISO-8859-1";
+
+body{
+	margin: 0;
+	padding: 0;
+	}
+	
+h1{
+	background-color: #ffdb58;
+	text-align: center;
+	color: #111;
+	font-family: 'Raleway', sans-serif;
+	font-size: 125px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 1;
+	margin: 0;	
+}	
+
+h1{
+	background-color: #ffdb58;
+	text-align: center;
+	color: #111;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	font-weight: lighter;
+	line-height: 32px;
+	margin: 0;	
+}
+
+table{
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 100%;
+}	
+
+tr:hover{background-color: ##ffdb58;}
+tf:nth-child(even){background-color: #f2f2f2;}
+tr:hover:nth-child(even){background-color: #ffdb58;}
+
+thead th{
+	font-size: 22px;
+	font-family: 'Raleway', sans-serif;
+	padding: 20px;
+	background-color: black;
+	color: white;
+	text-align: left;
+}
+
+tbody td{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	padding: 20px;
+	text-align: left;
+}

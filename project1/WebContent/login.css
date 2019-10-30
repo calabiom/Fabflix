@@ -1,0 +1,161 @@
+
+body {
+	margin: 0; 
+	padding: 0; 
+    background-image: url("https://i.imgur.com/QRxxXSL.png");
+    background-color: #E50914;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+form.login_form input[type=submit] {
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid grey;
+  width: 100%;
+  background: #FFC723;
+  color: black;
+  font-family: Raleway, sans-serif;
+  font-weight: 900;
+}
+
+.header img{
+	display: block;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+/*	margin-left: 5%;
+ 	margin-right: auto; */
+  	width: 200px;
+  	height: 200px;
+}
+
+h2{
+    color: white; 
+    text-shadow: 0 0 10px rgba(0,0,0,0.3); 
+    letter-spacing:1px; 
+    text-align:left; 
+    font-family: Raleway, sans-serif;
+    font-size: 40px;
+}
+form{
+    width: 300px; /* this is needed */
+    height: 200px; /* this is needed */
+
+
+    position: absolute; /* this is needed */
+    margin: auto; /* this is needed */
+    left: 0; /* this is needed */
+    right: 0; /* this is needed */
+    top: 0; /* this is needed */
+    bottom: 0; /* this is needed */
+    font-family: Raleway, sans-serif;
+    color: white;
+
+}
+/*
+#login_error_message{
+    width: 20px;
+    height: 20px;
+    position: relative; /* this is needed */
+/*    margin: auto; /* this is needed */
+/*    left: 0; /* this is needed */
+/*    right: 0; /* this is needed */
+/*    top: 0; /* this is needed */
+/*    bottom: 0; /* this is needed */
+/*    font-family: Raleway, sans-serif;
+    color: white;
+}
+*/
+#login_error_message{
+	font-family: Raleway, sans-serif;
+    color: white;
+    text-align: center;
+    top-margin: 400px;
+}
+.login_error_message{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
+/* input[type="submit"]{margin: auto; display: block; align-self: center;} */
+
+input { 
+    font-family: Raleway, sans-serif;
+	width: 100%; 
+	margin-bottom: 10px; 
+	background: rgba(0,0,0,0.3);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}
+input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+
+/* form{
+	padding: 20px 0;
+	position: relative;
+	z-index: 2;
+	
+	input{
+		display: block;
+		appearance: none;
+		outline: 0;
+		border: 1px solid fade(white, 40%);
+		background-color: fade(white, 20%);
+		width: 250px;
+		
+		border-radius: 3px;
+		padding: 10px 15px;
+		margin: 0 auto 10px auto;
+		display: block;
+		text-align: center;
+		font-size: 18px;
+		
+		color: white;
+		
+		transition-duration: 0.25s;
+		font-weight: 300;
+		
+		&:hover{
+			background-color: fade(white, 40%);
+		}
+		
+		&:focus{
+			background-color: white;
+			width: 300px;
+			
+			color: @prim;
+		}
+	}
+	
+	input[type=submit]{
+		appearance: none;
+		outline: 0;
+		background-color: white;
+		border: 0;
+		padding: 10px 15px;
+		color: @prim;
+		border-radius: 3px;
+		width: 250px;
+		cursor: pointer;
+		font-size: 18px;
+		transition-duration: 0.25s;
+		
+		&:hover{
+			background-color: rgb(245, 247, 249);
+		}
+	}
+} */

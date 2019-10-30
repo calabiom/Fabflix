@@ -1,0 +1,85 @@
+.navbar{ 
+    background: black; /*#221F1F;*/
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-nav {
+	flex-direction: row;
+}
+    
+.nav-link {
+	padding-right: 1.5rem !important;
+	padding-left: .5rem !important;
+}
+
+body {
+	margin: 0; 
+	padding: 0; 
+	background-image: url("//i.imgur.com/QRxxXSL.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	background-position: 0 45px; 
+}
+
+form.info input[type=text] {
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid grey;
+  width: 18%;
+  background: white;
+  color: black;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  display: inline;
+}
+
+form.info input[type=submit] {
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid grey;
+  margin-left: 40%;
+  width: 8%;
+  background: #FFC723;
+  color: black;
+  font-family: Raleway, sans-serif;
+  font-weight: 900;
+}
+
+.header{
+	margin-top:100px;
+}
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 35px;
+	color: white;
+	text-align: center;
+}
+
+label {
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+
+.info{
+	margin-left: 10%;
+}
+
+.login_error_message{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+}
+a{
+	color: white;
+}
+a:hover{
+	color: #FFC723;
+}
